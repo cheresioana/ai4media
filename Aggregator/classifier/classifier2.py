@@ -170,8 +170,16 @@ def retrain_model():
 
 
 def predict_statement(statement):
-    classifier = Classifier2()
-    return classifier.predict(statement)
+
+    try:
+        classifier = Classifier2()
+        acc = classifier.predict(statement)
+        return acc
+    except:
+        retrain_model()
+        classifier = Classifier2()
+        acc = classifier.predict(statement)
+        return acc
 
 
 import matplotlib.pyplot as plt
