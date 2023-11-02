@@ -74,7 +74,7 @@ We want to express our appreciation to the AI4Experiments and AI4Media communiti
 The MindBugs Discovery has indirectly received funding from the European Union’s Horizon 2020 research and innovation action programme, via the AI4Media Open Call #2 issued and executed under the AI4Media project (Grant Agreement no. 951911).
 
 <p align="center">
-  <img src="docs/ai4media.jpeg" width="48%" />
-  <img src="docs/Flag_of_Europe.png" width="48%" />
+  <img src="docs/ai4media.jpeg" height="200px" />
+  <img src="docs/Flag_of_Europe.png" height="200px" />
 </p>
 
