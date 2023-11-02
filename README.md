@@ -53,9 +53,9 @@ The KG component relies on the Aggregator to give labels to its data. Then, it u
 Locally, the KG component has a knowledge graph built using Neo4J and then exported as csv. This graph links different fake statements to the words, subjects, and things mentioned in them. This helps find groups of closely related fake statements, like pieces of a puzzle that fit together. It's like when you see news articles about similar topics – they are connected because they talk about the same things. This is done using an algorithm called the Louvain algorithm for community detection inside the knowledge graph.
 
 The algorithm also tells the user which group the statement belongs to, along with the words from that group and other fake statements that are similar. 
-
-<img src="docs/graph.png" alt="NEO screenshot" height="200px">
-
+<p align="center">
+<img src="docs/graph.png" alt="NEO screenshot" height="600px">
+</p>
 ## Orchestrator
 
 The Component Orchestrator is a component designed for testing purposes. When using the AI4EU platform, it automatically generates an orchestrator and this component doesn't need deployment. In essence, this orchestrator serves as a handy tool for evaluating and experimenting with different aspects of your project in a controlled, local environment. It allows you to fine-tune and validate the behavior of various components before deploying them to the broader AI4EU platform, ensuring a smooth and robust integration process.
