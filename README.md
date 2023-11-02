@@ -31,7 +31,9 @@ It's important to note that all the data provided by the published data broker h
 
 ## Aggregator
 
-![Aggregator](docs/training.png) 
+<p align="center">
+ <img src="docs/training.png" alt="Pipeline screenshot" >
+</p>
 
 The Aggregator component plays a dual role in our system by training a classifier capable of labeling various types of disinformation statements. In our dataset, the labels encompass categories such as "fake news," "war propaganda," and "disinformation."
 
