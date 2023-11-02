@@ -3,6 +3,7 @@
 This project was created during AI4Media Open Call under the challenge C1-A: Realising a hybrid AI application in AI4EU experiments
 
 All the code can be found on our github repo: https://github.com/cheresioana/ai4media 
+
 Learn more about our project on our official page: https://discovery.mindbugs.ro/  
 
 ## General description
