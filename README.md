@@ -9,7 +9,8 @@ Learn more about our project on our official page: https://discovery.mindbugs.ro
 
 The Mindbugs project is all about analyzing the universe of disinformation so that it may be studied and understood. Our deployment on AI4Experiments platform allows us to share more of our work with the AI community. 
 
-![Pipeline](docs/pipeline.png) 
+
+<img src="docs/pipeline.png" alt="Pipeline screenshot" height="200px">
 
 The pipeline begins with a DataBroker, responsible for collecting structured data containing "statement" and "label" information. This dataset then moves to the Aggregator component, which plays a role in processing the data.
 
@@ -49,7 +50,7 @@ Locally, the KG component has a knowledge graph built using Neo4J and then expor
 
 The algorithm also tells the user which group the statement belongs to, along with the words from that group and other fake statements that are similar. 
 
-<img src="docs/graph.png" alt="NEO screenshot" height="100px">
+<img src="docs/graph.png" alt="NEO screenshot" height="200px">
 
 ## Orchestrator
 
