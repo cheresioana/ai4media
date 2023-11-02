@@ -1,0 +1,39 @@
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Python log files
+*.log
+
+# Virtual environment
+venv/
+env/
+/.venv
+
+# IDE-specific files
+.vscode/
+.idea/
+
+# Compiled Python files
+*.pyc
+
+# User-specific files
+*.swp
+.DS_Store
+
+# Python package build
+*.egg-info/
+dist/
+build/
+*.egg
+
+# Jupyter Notebook files
+.ipynb_checkpoints/
+
+# pipenv virtual environment
+Pipfile.lock
+
+# Mac-specific
+.AppleDouble
+.DS_Store
