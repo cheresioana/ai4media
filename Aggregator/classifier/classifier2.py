@@ -127,7 +127,9 @@ def retrain_model():
     statements = data['statement'].tolist()
     labels = data['label'].tolist()
 
-    sns.countplot(x='label', data=data)
+    plt.clf()
+    plt.title('Data')
+    sns.countplot(x='label', data=data, label='All Data')
     plt.savefig("static/initial_data.jpg")
     unique_values = data['label'].unique()
     min = {'label': -1, 'vals': -1}
@@ -148,7 +150,7 @@ def retrain_model():
     statements = data['statement'].tolist()
     # statements = clean_text()
     labels = data['label'].tolist()
-    sns.countplot(x='label', data=data)
+    sns.countplot(x='label', data=data, label='Selected data')
     plt.savefig("static/selected_training.jpg")
 
     statements_train, statements_test, labels_train, labels_test = train_test_split(statements, labels,
@@ -211,13 +213,12 @@ if __name__ == '__main__':
     statements_train, statements_test, labels_train, labels_test = train_test_split(statements, labels,
                                                                                     test_size=int(0.15 * data.shape[0]),
                                                                                     random_state=42)
-    sns.countplot(data=labels_test)
-    plt.title("test")
-    plt.show()
+
     history = classifier.train(statements_train, labels_train)
     history_dict = history.history
     print(history_dict.keys())
     print(classifier.evaluate(statements_test, labels_test))
+
     plt.plot(history.history['accuracy'], label='Training Accuracy')
     plt.plot(history.history['val_accuracy'], label='Validation Accuracy')
     plt.title('Model Accuracy')
