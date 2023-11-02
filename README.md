@@ -40,11 +40,41 @@ Should there be a need to initiate a retraining process manually, the component 
 For data validation and assurance, the "/data" endpoint provides a means to verify the correct acquisition of data from the data broker, ensuring that the essential data transfer has occurred seamlessly.
 
 ## Knowledge graph component
+
 ![KG UI](docs/ikg_ui.png) 
+
 The KG component relies on the Aggregator to give labels to its data. Then, it uses OpenAI embeddings to identify the most similar fake statement from its dataset.
 
 Locally, the KG component has a knowledge graph built using Neo4J and then exported as csv. This graph links different fake statements to the words, subjects, and things mentioned in them. This helps find groups of closely related fake statements, like pieces of a puzzle that fit together. It's like when you see news articles about similar topics – they are connected because they talk about the same things. This is done using an algorithm called the Louvain algorithm for community detection inside the knowledge graph.
 
 The algorithm also tells the user which group the statement belongs to, along with the words from that group and other fake statements that are similar. 
 
+![NEO screenshot](docs/graph.png) 
+
+## Orchestrator
+
+The Component Orchestrator is a component designed for testing purposes. When using the AI4EU platform, it automatically generates an orchestrator and this component doesn't need deployment. In essence, this orchestrator serves as a handy tool for evaluating and experimenting with different aspects of your project in a controlled, local environment. It allows you to fine-tune and validate the behavior of various components before deploying them to the broader AI4EU platform, ensuring a smooth and robust integration process.
+
+## How MindBugs Discovery pipeline integrates into the AI community
+
+The versatility of this system allows for a range of valuable applications. Each component is designed to operate both independently and as part of a larger ensemble, offering flexibility and adaptability.
+
+Suppose there's a need to work with a different dataset. In that case, it's as straightforward as making a simple change within the DataBroker from the AI4Experiments platform. The Aggregator component seamlessly adjusts to the new data, automatically adapting its training process.
+
+If the goal is to develop a distinct model for enhanced data analysis and improved outcomes, the Aggregator component can be swapped out to accommodate this endeavor.
+
+Similarly, should the focus be on refining the knowledge graph (KG) and its community identification algorithm, only the KG component can be replaced, leaving the other components untouched.
+
+Moreover, the beauty of this system lies in the open availability of seven different combinations. These combinations allow for utilizing just one component, a pair of components, or all three, offering a range of choices to cater to diverse project requirements and objectives. This inherent flexibility is a key feature of the system, enabling users to customize their approach as needed.
+
+## Credits 
+
+We want to express our appreciation to the AI4Experiments and AI4Media communities for their vital support. This project wouldn't have been achievable without their collaboration. Thank you for making it all possible!
+
+The MindBugs Discovery has indirectly received funding from the European Union’s Horizon 2020 research and innovation action programme, via the AI4Media Open Call #2 issued and executed under the AI4Media project (Grant Agreement no. 951911).
+
+<p align="center">
+  <img src="docs/ai4media.jpeg" width="48%" />
+  <img src="docs/Flag_of_Europe.png" width="48%" />
+</p>
 
