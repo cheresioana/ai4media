@@ -39,3 +39,12 @@ Should there be a need to initiate a retraining process manually, the component 
 
 For data validation and assurance, the "/data" endpoint provides a means to verify the correct acquisition of data from the data broker, ensuring that the essential data transfer has occurred seamlessly.
 
+## Knowledge graph component
+![KG UI](docs/ikg_ui.png) 
+The KG component relies on the Aggregator to give labels to its data. Then, it uses OpenAI embeddings to identify the most similar fake statement from its dataset.
+
+Locally, the KG component has a knowledge graph built using Neo4J and then exported as csv. This graph links different fake statements to the words, subjects, and things mentioned in them. This helps find groups of closely related fake statements, like pieces of a puzzle that fit together. It's like when you see news articles about similar topics – they are connected because they talk about the same things. This is done using an algorithm called the Louvain algorithm for community detection inside the knowledge graph.
+
+The algorithm also tells the user which group the statement belongs to, along with the words from that group and other fake statements that are similar. 
+
+
