@@ -9,8 +9,10 @@ Learn more about our project on our official page: https://discovery.mindbugs.ro
 
 The Mindbugs project is all about analyzing the universe of disinformation so that it may be studied and understood. Our deployment on AI4Experiments platform allows us to share more of our work with the AI community. 
 
+<p align="center">
+ <img src="docs/pipeline.png" alt="Pipeline screenshot" height="450px">
+</p>
 
-<img src="docs/pipeline.png" alt="Pipeline screenshot" height="200px">
 
 The pipeline begins with a DataBroker, responsible for collecting structured data containing "statement" and "label" information. This dataset then moves to the Aggregator component, which plays a role in processing the data.
 
@@ -42,7 +44,9 @@ For data validation and assurance, the "/data" endpoint provides a means to veri
 
 ## Knowledge graph component
 
-![KG UI](docs/ikg_ui.png) 
+<p align="center">
+ <img src="docs/ikg_ui.png" alt="Pipeline screenshot" height="650px">
+</p>
 
 The KG component relies on the Aggregator to give labels to its data. Then, it uses OpenAI embeddings to identify the most similar fake statement from its dataset.
 
