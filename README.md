@@ -49,7 +49,7 @@ Locally, the KG component has a knowledge graph built using Neo4J and then expor
 
 The algorithm also tells the user which group the statement belongs to, along with the words from that group and other fake statements that are similar. 
 
-![NEO screenshot](docs/graph.png) 
+<img src="docs/graph.png" alt="NEO screenshot" height="100px">
 
 ## Orchestrator
 
