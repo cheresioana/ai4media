@@ -56,6 +56,7 @@ The algorithm also tells the user which group the statement belongs to, along wi
 <p align="center">
 <img src="docs/graph.png" alt="NEO screenshot" height="600px">
 </p>
+
 ## Orchestrator
 
 The Component Orchestrator is a component designed for testing purposes. When using the AI4EU platform, it automatically generates an orchestrator and this component doesn't need deployment. In essence, this orchestrator serves as a handy tool for evaluating and experimenting with different aspects of your project in a controlled, local environment. It allows you to fine-tune and validate the behavior of various components before deploying them to the broader AI4EU platform, ensuring a smooth and robust integration process.
